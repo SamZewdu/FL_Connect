@@ -57,7 +57,7 @@
                                 <state key="normal" title="USE ROOM NOW"/>
                                 <connections>
                                     <action selector="showAlertController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hN4-ER-6NR"/>
-                                    <segue destination="O2y-wY-AHk" kind="show" id="3yq-0I-fCZ"/>
+                                    <segue destination="eUq-hh-Nlc" kind="show" id="RWp-HG-cUy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-Wc-U4G">
@@ -85,20 +85,34 @@
             <point key="canvasLocation" x="34.5703125" y="93.75"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="Cft-P9-o32">
+        <scene sceneID="plB-Gd-Kjh">
             <objects>
-                <viewController id="O2y-wY-AHk" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5Zb-Jw-YDS">
+                <viewController id="eUq-hh-Nlc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bNw-T4-wVm" customClass="UIAlertView">
                         <rect key="frame" x="0.0" y="0.0" width="704" height="728"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="bLU-Pn-W0a"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1u-Rv-C05">
+                                <rect key="frame" x="318" y="450" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CONFIRM"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*ROOM NAME* IS AVAILABLE FOR 15 OR 30 MINUTES. WOULD YOU LIKE TO BOOK THIS ROOM?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsE-2A-uln">
+                                <rect key="frame" x="77" y="302" width="551" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WR5-YB-d3d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Gw7-bK-2Ig"/>
+                    <navigationItem key="navigationItem" id="Apg-at-5hX"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I6S-rW-8fn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="850-Gb-vS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="94"/>
+            <point key="canvasLocation" x="762" y="81"/>
         </scene>
     </scenes>
     <resources>
