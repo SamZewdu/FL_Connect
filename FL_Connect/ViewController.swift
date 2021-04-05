@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
+    // Array of all possible rooms
+    let rooms = ["Audio Alley"]
     
     @IBOutlet weak var useRoomNowPressed: UIButton!
     
@@ -28,6 +30,9 @@ class ViewController: UIViewController {
         
     }
     
+    func roomIsBooked(){
+        
+    }
     
     
     // Use room now button greyed out unless a 15/30 button is selected
