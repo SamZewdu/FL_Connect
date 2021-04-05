@@ -19,6 +19,7 @@ class ViewController: UIViewController {
             
         }
     }
+    //anding comments to the viewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
