@@ -14,15 +14,15 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     @IBOutlet weak var roomsPickerView: UIPickerView!
     @IBOutlet weak var useRoomNowPressed: UIButton!
-    var myPickerView:UIPickerView!
+    var pickerView:UIPickerView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         useRoomNowPressed.isEnabled = false
-        self.myPickerView.delegate = self
-        self.myPickerView.dataSource = self
+        roomsPickerView.delegate = self
+        roomsPickerView.dataSource = self
         rooms = ["Audio Alley","Garage"]
     }
 
