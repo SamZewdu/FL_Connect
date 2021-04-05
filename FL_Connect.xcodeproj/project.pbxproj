@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A20132DF261B6699000E2322 /* CalendarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20132DE261B6699000E2322 /* CalendarControllerViewController.swift */; };
+		A20132E3261B6B34000E2322 /* RoomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20132E2261B6B34000E2322 /* RoomsController.swift */; };
 		A280F3CB25F7D5980094712B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3CA25F7D5980094712B /* AppDelegate.swift */; };
 		A280F3CD25F7D5980094712B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3CC25F7D5980094712B /* SceneDelegate.swift */; };
 		A280F3CF25F7D5980094712B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3CE25F7D5980094712B /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		A20132DE261B6699000E2322 /* CalendarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarControllerViewController.swift; sourceTree = "<group>"; };
+		A20132E2261B6B34000E2322 /* RoomsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsController.swift; sourceTree = "<group>"; };
 		A280F3C725F7D5980094712B /* FL_Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FL_Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A280F3CA25F7D5980094712B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A280F3CC25F7D5980094712B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		A280F3C925F7D5980094712B /* FL_Connect */ = {
 			isa = PBXGroup;
 			children = (
+				A20132E2261B6B34000E2322 /* RoomsController.swift */,
 				A20132DE261B6699000E2322 /* CalendarControllerViewController.swift */,
 				A280F3CA25F7D5980094712B /* AppDelegate.swift */,
 				A280F3CC25F7D5980094712B /* SceneDelegate.swift */,
@@ -142,6 +145,7 @@
 			files = (
 				A280F3CF25F7D5980094712B /* ViewController.swift in Sources */,
 				A280F3CB25F7D5980094712B /* AppDelegate.swift in Sources */,
+				A20132E3261B6B34000E2322 /* RoomsController.swift in Sources */,
 				A20132DF261B6699000E2322 /* CalendarControllerViewController.swift in Sources */,
 				A280F3CD25F7D5980094712B /* SceneDelegate.swift in Sources */,
 			);
