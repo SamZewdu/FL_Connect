@@ -12,7 +12,15 @@ class room {
  
     var roomName = ""
     var isBooked = true
+    var available = true
+   
+    if isBooked{
+        return "is available"
+    }
+    else{
+        return "is not available"
+    }
     
-    return (\(roomname))
+    return "\(roomName) is currently \(isBooked)"
     
 }
