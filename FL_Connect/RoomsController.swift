@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
-struct roomItems:Identifiable {
+struct rooms: Identifiable {
+    
+    var id: ObjectIdentifier
     var name:String
     var isBooked:Bool
 }
@@ -16,3 +18,4 @@ struct roomItems:Identifiable {
 class RoomController:UIResponder{
     
 }
+

@@ -7,31 +7,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource{
+    
     // Array of all possible rooms
-    let rooms = ["Audio Alley"]
+    var rooms: [String] = [String]()
     
+    @IBOutlet weak var roomsPickerView: UIPickerView!
     @IBOutlet weak var useRoomNowPressed: UIButton!
+    var myPickerView:UIPickerView!
     
-    struct roomNames {
-        func room(name) -> return String {
-            
-        }
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         useRoomNowPressed.isEnabled = false
-        // Do any additional setup after loading the view.
+        self.myPickerView.delegate = self
+        self.myPickerView.dataSource = self
+        rooms = ["Audio Alley","Garage"]
     }
+
+    //PickerView Functions
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return rooms.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return rooms[row]
+    }
+    
     
     @IBAction func showAlertController(_ sender: UIButton) {
         
     }
     
     func roomIsBooked(){
-        
     }
     
     
