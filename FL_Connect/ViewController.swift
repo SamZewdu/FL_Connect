@@ -10,19 +10,6 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var useRoomNowPressed: UIButton!
-    
-    struct roomNames {
-        func room(name) -> return String {
-            
-        }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        useRoomNowPressed.isEnabled = false
-        // Do any additional setup after loading the view.
-    }
     
     @IBAction func showAlertController(_ sender: UIButton) {
         
