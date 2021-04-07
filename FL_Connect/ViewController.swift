@@ -23,7 +23,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         useRoomNowPressed.isEnabled = false
         roomsPickerView.delegate = self
         roomsPickerView.dataSource = self
-        rooms = ["Audio Alley","Garage",]
+        rooms = ["Wormhole","Pitch Room","Conference Room 1","Conference Room 2"]
     }
 
     //PickerView Functions
