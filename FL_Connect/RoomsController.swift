@@ -8,19 +8,14 @@
 import Foundation
 import UIKit
 
-class room {
- 
-    var roomName = ""
-    var isBooked = true
-    var available = true
-   
-    if isBooked{
-        return "is available"
-    }
-    else{
-        return "is not available"
-    }
+struct rooms: Identifiable {
     
-    return "\(roomName) is currently \(isBooked)"
+    var id: ObjectIdentifier
+    var name:String
+    var isBooked:Bool
+}
+
+class RoomController:UIResponder{
     
 }
+

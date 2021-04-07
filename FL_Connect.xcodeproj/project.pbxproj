@@ -60,11 +60,11 @@
 		A280F3C925F7D5980094712B /* FL_Connect */ = {
 			isa = PBXGroup;
 			children = (
-				A20132E2261B6B34000E2322 /* RoomsController.swift */,
 				A20132DE261B6699000E2322 /* CalendarControllerViewController.swift */,
 				A280F3CA25F7D5980094712B /* AppDelegate.swift */,
 				A280F3CC25F7D5980094712B /* SceneDelegate.swift */,
 				A280F3CE25F7D5980094712B /* ViewController.swift */,
+				A20132E2261B6B34000E2322 /* RoomsController.swift */,
 				A280F3D025F7D5980094712B /* Main.storyboard */,
 				A280F3D325F7D5A70094712B /* Assets.xcassets */,
 				A280F3D525F7D5A70094712B /* LaunchScreen.storyboard */,
