@@ -23,7 +23,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         useRoomNowPressed.isEnabled = false
         roomsPickerView.delegate = self
         roomsPickerView.dataSource = self
-        rooms = ["Audio Alley","Garage"]
+        rooms = ["Audio Alley","Garage",]
     }
 
     //PickerView Functions
@@ -45,6 +45,12 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     func roomIsBooked(){
     }
     
+    /*
+    when room and date is selected{
+    show alert controller with a time picker that can assign that time to a room and date
+    also takes up
+    }
+    */
     
     // Use room now button greyed out unless a 15/30 button is selected
    
