@@ -42,11 +42,11 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         
     }
     
-    @IBOutlet var pickerViewWasSelected: UIPickerView!{
-        var selectedRoom =
+    // var pickerViewWasSelected: UIPickerView!{
+      //  var selectedRoom =
         
-            self.
-    }
+       //     self.
+  //  }
     
     func roomIsBooked(){
     }
