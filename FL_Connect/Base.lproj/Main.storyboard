@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bxw-eM-nSR">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bxw-eM-nSR" customClass="UICollectionView" customModule="FL_Connect" customModuleProvider="target">
                                 <rect key="frame" x="133" y="141" width="759" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,7 +70,6 @@
                         <color key="backgroundColor" red="0.050980392159999999" green="0.17254901959999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="pickerViewWasSelected" destination="Pra-rm-l3J" id="BPv-Fc-8EN"/>
                         <outlet property="roomsPickerView" destination="1ul-g7-w5u" id="ilX-Dk-SQB"/>
                         <outlet property="useRoomNowPressed" destination="fbf-jW-wsg" id="PfA-Ke-Fdk"/>
                     </connections>
