@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A20132DF261B6699000E2322 /* CalendarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20132DE261B6699000E2322 /* CalendarControllerViewController.swift */; };
 		A20132E3261B6B34000E2322 /* RoomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20132E2261B6B34000E2322 /* RoomsController.swift */; };
 		A202709C261E087C0071159C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A202709B261E087C0071159C /* GoogleService-Info.plist */; };
+		A20270DA262132F10071159C /* SIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20270D9262132F10071159C /* SIgnUpViewController.swift */; };
+		A20270DD262133050071159C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20270DC262133050071159C /* LoginViewController.swift */; };
+		A20270E12621330F0071159C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20270E02621330F0071159C /* HomeViewController.swift */; };
 		A280F3CB25F7D5980094712B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3CA25F7D5980094712B /* AppDelegate.swift */; };
 		A280F3CD25F7D5980094712B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3CC25F7D5980094712B /* SceneDelegate.swift */; };
 		A280F3CF25F7D5980094712B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3CE25F7D5980094712B /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		A20132DE261B6699000E2322 /* CalendarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarControllerViewController.swift; sourceTree = "<group>"; };
 		A20132E2261B6B34000E2322 /* RoomsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsController.swift; sourceTree = "<group>"; };
 		A202709B261E087C0071159C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A20270D9262132F10071159C /* SIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnUpViewController.swift; sourceTree = "<group>"; };
+		A20270DC262133050071159C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A20270E02621330F0071159C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A280F3C725F7D5980094712B /* FL_Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FL_Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A280F3CA25F7D5980094712B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A280F3CC25F7D5980094712B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +60,25 @@
 				0FBF6ED9F196B5039BD26C94 /* Pods-FL_Connect.debug.xcconfig */,
 				E15CAAB09D39DC94692EA6C1 /* Pods-FL_Connect.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A20270E3262133140071159C /* Main Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A20270D9262132F10071159C /* SIgnUpViewController.swift */,
+				A20270DC262133050071159C /* LoginViewController.swift */,
+				A20270E02621330F0071159C /* HomeViewController.swift */,
+			);
+			path = "Main Screens";
+			sourceTree = "<group>";
+		};
+		A20270E4262133370071159C /* Calendar VC */ = {
+			isa = PBXGroup;
+			children = (
+				A20132DE261B6699000E2322 /* CalendarControllerViewController.swift */,
+			);
+			path = "Calendar VC";
 			sourceTree = "<group>";
 		};
 		A280F3BE25F7D5970094712B = {
@@ -79,7 +102,6 @@
 		A280F3C925F7D5980094712B /* FL_Connect */ = {
 			isa = PBXGroup;
 			children = (
-				A20132DE261B6699000E2322 /* CalendarControllerViewController.swift */,
 				A280F3CA25F7D5980094712B /* AppDelegate.swift */,
 				A280F3CC25F7D5980094712B /* SceneDelegate.swift */,
 				A280F3CE25F7D5980094712B /* ViewController.swift */,
@@ -89,6 +111,8 @@
 				A280F3D525F7D5A70094712B /* LaunchScreen.storyboard */,
 				A280F3D825F7D5A70094712B /* Info.plist */,
 				A202709B261E087C0071159C /* GoogleService-Info.plist */,
+				A20270E4262133370071159C /* Calendar VC */,
+				A20270E3262133140071159C /* Main Screens */,
 			);
 			path = FL_Connect;
 			sourceTree = "<group>";
@@ -216,8 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20270DD262133050071159C /* LoginViewController.swift in Sources */,
 				A280F3CF25F7D5980094712B /* ViewController.swift in Sources */,
 				A280F3CB25F7D5980094712B /* AppDelegate.swift in Sources */,
+				A20270E12621330F0071159C /* HomeViewController.swift in Sources */,
+				A20270DA262132F10071159C /* SIgnUpViewController.swift in Sources */,
 				A20132E3261B6B34000E2322 /* RoomsController.swift in Sources */,
 				A20132DF261B6699000E2322 /* CalendarControllerViewController.swift in Sources */,
 				A280F3CD25F7D5980094712B /* SceneDelegate.swift in Sources */,
