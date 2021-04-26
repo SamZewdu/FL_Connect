@@ -79,21 +79,6 @@
             </objects>
             <point key="canvasLocation" x="34.5703125" y="93.75"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="0EY-ww-QgD">
-            <objects>
-                <viewController id="98a-eg-pG5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RZB-DF-bCp">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="MAn-0c-Tvb"/>
-                        <color key="backgroundColor" red="0.050980392159999999" green="0.17254901959999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XNp-EZ-s7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-602" y="713"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Futures Lab White wGold logoOnly" width="1104" height="786"/>
