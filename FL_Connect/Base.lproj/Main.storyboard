@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,17 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bxw-eM-nSR">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bxw-eM-nSR" customClass="UICollectionView" customModule="FL_Connect" customModuleProvider="target">
                                 <rect key="frame" x="133" y="141" width="759" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cWC-zs-FKF" customClass="UIAlert">
-                                        <rect key="frame" x="0.0" y="221" width="285" height="193"/>
+                                    <pickerView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ul-g7-w5u">
+                                        <rect key="frame" x="0.0" y="-157" width="704" height="728"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.97647058819999999" green="0.96078431369999995" blue="0.91295826759999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    </datePicker>
+                                    </pickerView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-jW-wsg">
                                 <rect key="frame" x="58" y="655" width="199" height="44"/>
@@ -48,7 +46,6 @@
                                 <state key="normal" title="USE ROOM NOW"/>
                                 <connections>
                                     <action selector="showAlertController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hN4-ER-6NR"/>
-                                    <segue destination="eUq-hh-Nlc" kind="show" id="RWp-HG-cUy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-Wc-U4G">
@@ -63,10 +60,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="30 MIN"/>
                             </button>
-                            <pickerView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ul-g7-w5u">
-                                <rect key="frame" x="340" y="62" width="344" height="71"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baM-mT-RJi">
+                                <rect key="frame" x="464" y="58" width="111" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Rooms"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.050980392159999999" green="0.17254901959999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,40 +80,22 @@
             <point key="canvasLocation" x="34.5703125" y="93.75"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="plB-Gd-Kjh">
+        <scene sceneID="0EY-ww-QgD">
             <objects>
-                <viewController id="eUq-hh-Nlc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bNw-T4-wVm" customClass="UIAlertView">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="728"/>
+                <viewController id="98a-eg-pG5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RZB-DF-bCp">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1u-Rv-C05">
-                                <rect key="frame" x="318" y="450" width="68" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="CONFIRM"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*ROOM NAME* IS AVAILABLE FOR 15 OR 30 MINUTES. WOULD YOU LIKE TO BOOK THIS ROOM?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsE-2A-uln">
-                                <rect key="frame" x="77" y="302" width="551" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="WR5-YB-d3d"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="MAn-0c-Tvb"/>
+                        <color key="backgroundColor" red="0.050980392159999999" green="0.17254901959999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Apg-at-5hX"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="850-Gb-vS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XNp-EZ-s7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="81"/>
+            <point key="canvasLocation" x="-602" y="713"/>
         </scene>
     </scenes>
     <resources>
         <image name="Futures Lab White wGold logoOnly" width="1104" height="786"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

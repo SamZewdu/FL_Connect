@@ -12,18 +12,20 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     // Array of all possible rooms
     var rooms: [String] = [String]()
     
-    @IBOutlet weak var roomsPickerView: UIPickerView!
     @IBOutlet weak var useRoomNowPressed: UIButton!
-    var pickerView:UIPickerView!
+    var roomsPickerView:UIPickerView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         useRoomNowPressed.isEnabled = false
+        var pickerFrame: CGRect = CGRect(x: 17, y: 27, width: 250, height: 300)
+        var roomPickerView : UIPickerView = UIPickerView(frame: pickerFrame)
         roomsPickerView.delegate = self
         roomsPickerView.dataSource = self
-        rooms = ["Audio Alley","Garage",]
+        
+        rooms = ["Wormhole","Pitch Room","Conference Room 1","Conference Room 2"]
     }
 
     //PickerView Functions
@@ -41,6 +43,12 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     @IBAction func showAlertController(_ sender: UIButton) {
         
     }
+    
+    // var pickerViewWasSelected: UIPickerView!{
+      //  var selectedRoom =
+        
+       //     self.
+  //  }
     
     func roomIsBooked(){
     }
