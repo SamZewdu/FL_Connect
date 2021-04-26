@@ -13,6 +13,7 @@
 		A20270DA262132F10071159C /* SIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20270D9262132F10071159C /* SIgnUpViewController.swift */; };
 		A20270DD262133050071159C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20270DC262133050071159C /* LoginViewController.swift */; };
 		A20270E12621330F0071159C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20270E02621330F0071159C /* HomeViewController.swift */; };
+		A20270F5262630290071159C /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20270F4262630290071159C /* MediaPlayerViewController.swift */; };
 		A280F3CB25F7D5980094712B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3CA25F7D5980094712B /* AppDelegate.swift */; };
 		A280F3CD25F7D5980094712B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3CC25F7D5980094712B /* SceneDelegate.swift */; };
 		A280F3CF25F7D5980094712B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3CE25F7D5980094712B /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		A20270D9262132F10071159C /* SIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnUpViewController.swift; sourceTree = "<group>"; };
 		A20270DC262133050071159C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A20270E02621330F0071159C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A20270F4262630290071159C /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MediaPlayerViewController.swift; path = /Users/samzewdu/Desktop/Coding/FL_Connect/FL_Connect/MediaPlayerViewController.swift; sourceTree = "<absolute>"; };
 		A280F3C725F7D5980094712B /* FL_Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FL_Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A280F3CA25F7D5980094712B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A280F3CC25F7D5980094712B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A280F3CC25F7D5980094712B /* SceneDelegate.swift */,
 				A280F3CE25F7D5980094712B /* ViewController.swift */,
 				A20132E2261B6B34000E2322 /* RoomsController.swift */,
+				A20270F4262630290071159C /* MediaPlayerViewController.swift */,
 				A280F3D025F7D5980094712B /* Main.storyboard */,
 				A280F3D325F7D5A70094712B /* Assets.xcassets */,
 				A280F3D525F7D5A70094712B /* LaunchScreen.storyboard */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20270DD262133050071159C /* LoginViewController.swift in Sources */,
+				A20270F5262630290071159C /* MediaPlayerViewController.swift in Sources */,
 				A280F3CF25F7D5980094712B /* ViewController.swift in Sources */,
 				A280F3CB25F7D5980094712B /* AppDelegate.swift in Sources */,
 				A20270E12621330F0071159C /* HomeViewController.swift in Sources */,
