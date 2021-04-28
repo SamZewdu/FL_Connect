@@ -13,9 +13,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     var rooms: [String] = [String]()
     
     @IBOutlet weak var useRoomNowPressed: UIButton!
-    var roomsPickerView:UIPickerView!
-    
-    
+    @IBOutlet weak var roomsPickerView: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
