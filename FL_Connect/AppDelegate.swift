@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func registerLocationManager() {
-        if CLLocationManager.authorizationStatus() != .authorizedWhenInUse {
+        if locationManager.authorizationStatus != .authorizedWhenInUse {
             locationManager.requestWhenInUseAuthorization()
         }
         
