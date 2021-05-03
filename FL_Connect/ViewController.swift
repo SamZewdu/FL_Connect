@@ -18,7 +18,15 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         useRoomNowPressed.isEnabled = false
+//        var pickerFrame: CGRect = CGRect(x: 17, y: 27, width: 250, height: 300)
+//        var roomPickerView : UIPickerView = UIPickerView(frame: pickerFrame)
+//        roomsPickerView.delegate = self
+//        roomsPickerView.dataSource = self
         
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        
+  
     }
 // Auto Rotate
     override var shouldAutorotate: Bool {
